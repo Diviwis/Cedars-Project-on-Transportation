@@ -1,0 +1,161 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+.navBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 55px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #FFFFFF;
+    color: #000000;
+    border-bottom: 1px solid #1f1f1f;
+    position: fixed;
+    width: 100%;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 15%;
+    color: #000000;
+}
+
+.logo strong {
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 35px;
+    margin: 0 15px;
+}
+
+.navBar ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 55px;
+    padding: 0 55px;
+}
+
+.navBar li {
+    margin: 0 15px;
+}
+
+.navBar li a {
+    color: #173ea1;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.navBar li a:hover {
+    transition: .2s;
+    color: #ffb52c;
+}
+
+.navBar span {
+    background-color: #ffb52c;
+    border-radius: 5px;
+    color: #FFFFFF;
+    padding: 10px 15px;
+}
+
+.navBar span:hover {
+    border: 1px #173ea1 solid;
+    color: #173ea1;
+    background-color: transparent;
+}
+
+.signUpPage {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #000;
+    border: 2px #173ea1 solid;
+    background-color: transparent;
+    padding: 25px;
+    border-radius: 10px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.formHeader {
+    color: #173ea1;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.formHeader span {color: #ffb52c;}
+
+.formInput {
+    margin: 25px 0;
+}
+
+.formInput input {
+    display: block;
+    border: none;
+    border-radius: 5px;
+    width: 350px;
+    padding: 15px 5px;
+    font-size: 15px;
+    background-color: #ffab10ab;
+    margin: 15px 0;
+}
+
+.formInput input:hover {
+    outline: none;
+    background-color: #FFFFFF;
+}
+
+.formInput input:focus {
+    outline: none;
+    background-color: #FFFFFF;
+}
+
+button {
+    border: 1px #173ea1 solid;
+    background-color: #173ea1;
+    color: #FFFFFF;
+    font-size: 15px;
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    padding: 7px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    border: #ffb52c 1px solid;
+    background-color: #ffb52c;
+    transition: .35s;
+}
+
+.formExtras p {
+    font-size: 13px;
+    margin-top: 25px;
+}
+
+.formExtras a {
+    color: #173ea1;
+}
+
+.formExtras a:hover {
+    color: #ffb52c;
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/images/favicon.png">
+    <link rel="stylesheet" href="../assets/css/signup_style.css">
+    <title>SWIFT | Create account</title>
+</head>
+
+<body>
+    <div class="navBar">
+        <a href="./air_landing.html" class="logo">
+            <img src="../assets/images/logo.png" width="75px">
+        </a>
+
+        <ul>
+            <li><a href="./about.html">About Us</a></li>
+            <li><a href="./login.html" target="_blank"><span>Login</span></a></li>
+        </ul>
+    </div>
+
+
+    <section class="signUpPage">
+        <div class="form">
+            <div class="formHeader">
+                <h2>CREATE <span>ACCOUNT</span></h2>
+                <img src="../assets/images/logo.png" alt="page logo" width="55px">
+            </div>
+
+            <div class="formInput">
+                <input type="text" placeholder="First Name">
+                <input type="text" placeholder="Last Name">
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Pasword">
+            </div>
+
+            <div class="formBtn">
+                <button>Create Account</button>
+            </div>
+
+            <div class="formExtras">
+                <p>Already have an account? <a href="../templates/login.html" target="_blank">Log in to your account.</a></p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- <main>
+        <form class="signUp">
+        <div class="form">
+            <div class="swift">
+                <h2>LOG IN</h2>
+                <img src="./assets/images/logo.png" alt="page logo" width="70" height="30">
+            </div>
+            <div class="div">
+                <div class="name">
+                    <input type="text" data-Name class="input-field" placeholder="Enter your name">
+                </div>
+                <div class="email">
+                    <input type="email" data-mail class="input-field" placeholder="Enter your Email">
+                </div>
+            </div>
+            
+            <div class="pasword">
+                <input type="text" data-pass class="input-field" placeholder="Enter your password">
+            </div>
+            <div class="pasword">
+                <input type="text" data-cf-pass class="input-field" placeholder="Please Your Confirm password ">
+            </div>
+        
+                <div class="sign">
+                    <input type="submit" class="submit-field" value="Sign Up">
+                </div>
+            </div>
+        </div>
+        </form> -->
+</body>
+
+<script>
+
+    var signUp = document.getElementsByClassName('signUp');
+    document.querySelector(".signUp").addEventListener('submit', (operator) => {
+        operator.preventDefault()
+        const mail = document.querySelector("[data-mail]")
+        const Name = document.querySelector("[data-Name]")
+        const pass = document.querySelector("[data-pass]")
+        const cfPass = document.querySelector("[data-cf-pass]")
+        const LINK = document.querySelector("[data-link]")
+
+       
+     
+    if(pass.value==cfPass.value){
+        alert('welcome')
+    }
+    else{
+        alert("Passwords don't match")
+    }
+})
+
+
+</script>
+
+</html>

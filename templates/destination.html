@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/images/favicon.png">
+    <link rel="stylesheet" href="../assets/css/destination_style.css">
+    <title>SWIFT | Top Destinations for You</title>
+</head>
+
+<body>
+    <div class="navBar">
+        <a href="./air_landing.html" class="logo">
+            <img src="../assets/images/logo.png" width="75px">
+        </a>
+
+        <div class="navOthers">
+            <a href="./destination.html" id="navDiff">Top Destinations</a>
+            <a href="./air_landing.html">SWIFT Air</a>
+            <a href="./road_landing.html">SWIFT Road</a>
+        </div>
+
+        <ul>
+            <li><a href="./about.html">About Us</a></li>
+            <button>Login</button>
+        </ul>
+    </div>
+
+    <section class="destinationImages">
+        <img src="" name="slides">
+
+        <script>
+            var i = 0
+            var images = []
+            var time = 4500
+
+            images[0] = '../assets/images/destinations/image1.jpg'
+            images[1] = '../assets/images/destinations/image2.jpg'
+            images[2] = '../assets/images/destinations/image3.jpg'
+            images[3] = '../assets/images/destinations/image4.jpg'
+            images[4] = '../assets/images/destinations/image5.jpg'
+            images[5] = '../assets/images/destinations/image6.jpg'
+
+            changeImages()
+
+            function changeImages() {
+                document.slides.src = images[i];
+
+                if (i < images.length - 1) {
+                    i++;
+                }
+
+                else {
+                    i = 0
+                }
+
+                setTimeout('changeImages()', time);
+
+            }
+
+            // window.onload(changeImages())
+        </script>
+    </section>
+
+    <section class="news">
+        <div class="newsText">
+            <h2>Want to get the latest travel news and deals from us?</h2>
+            <p>Enter your email and we'll have them sent your way.</p>
+        </div>
+
+        <div class="newsInput">
+            <input type="email" placeholder="Your email...">
+            <button>Subscribe</button>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="footerLeft">
+            <ul class="footerServices">
+                <li>Services</li>
+                <li><a href="./air_landing.html">Flights</a></li>
+                <li><a href="./road_landing.html">Rides</a></li>
+                <li><a href="./destination.html">Top Destinations</a></li>
+            </ul>
+
+            <ul class="moreOnUs">
+                <li>More on Us</li>
+                <li><a href="./about.html">About Us</a></li>
+                <!-- <li><a href="#">Feedback</a></li> -->
+            </ul>
+        </div>
+
+        <div class="footerRight">
+            <h3>CONTACT US</h3>
+            <div class="contactLeft">
+                <p>Mobile: +2348052218277</p>
+                <p>Email: swiftinc@gmail.com</p>
+            </div>
+
+            <div class="contactRight">
+                <p>Our HEAD OFFICE: 43 st. Lukashire street, Lilby estate, Bonny Island, Rivers State, Nigeria.</p>
+            </div>
+        </div>
+    </section>
+    <section class="copyright">
+        <p>© 2022 Swift transports. All rights reserved</p>
+    </section>
+</body>
+
+</html>
